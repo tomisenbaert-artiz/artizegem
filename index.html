@@ -6,14 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>artizegem</title>
   </head>
-  <body>
-    <div>
-      <h1 class="font-bold underline">Hello World!</h1>
-      <div class="text-center mt-5">
-        <button 
-          class="rounded-full bg-red-600 px-6 py-2 text-white font-bold shadow-lg hover:bg-red-700 transition duration-300">Subscribe</button>
-      </div>
-    </div>
+  <body class="bg-gray-100 font-sans">
+
+    <header class="bg-white shadow relative z-10">
+        <nav class="mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-gray-800">
+                    Art'Iz Kunstacademie
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Kalender</a>
+                    <div class="relative group">
+                        <button id="aanbod-button" class="flex items-center text-gray-600 hover:text-blue-500">
+                            <span>Aanbod</span>
+                            <svg class="w-4 h-4 ml-1 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M10 12l-6-6h12l-6 6z" />
+                            </svg>
+                        </button>
+                        <div id="aanbod-dropdown" class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Beeld</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Muziek</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Woord</a>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Inschrijven</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Sociale media</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mx-auto px-6 py-12 bg-[url(artiz-banner-background.jpg)]">
+      <section id="home" class="relative text-white py-20 md:py-32">
+        <div class="absolute inset-0 bg-cover bg-center" ></div>
+      </section>
+      <section id="part1" class="py-16 md:py-24 opacity-95">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Our Website!</h1>
+            <p class="text-gray-700 leading-relaxed">
+                This is a simple hero section for the main body of your page. You can replace this content with whatever you need. Tailwind CSS makes it easy to style your components directly in the HTML markup, saving you time and effort.
+            </p>
+            <button class="mt-6 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                Learn More
+            </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 Art'Iz. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
